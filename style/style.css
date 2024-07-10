@@ -151,6 +151,7 @@ nav a:hover {
 #projects {
     width: 100%;
     height: fit-content;
+    
 }
 
 #about h1,
@@ -207,4 +208,24 @@ padding-left: 30px;
     width: 30px;
     display: flexbox;
     padding-right: 15px;
+}
+
+.typingAnimation{
+    display: inline-block;
+}
+
+.typingText{
+    overflow: hidden;
+    border-right: 0.15rem solid #f0be6f;
+    white-space: nowrap;
+    animation: typing 4s steps(30, end) forwards;
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 30ch;
+    }
 }
